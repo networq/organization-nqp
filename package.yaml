@@ -1,0 +1,13 @@
+name: networq:organization
+description: Organization types
+license: MIT
+
+widgets:
+  memberGroupsTab:
+    type: networq:organization:member
+    hook: tabs
+    label: Groups
+  groupMembersTab:
+    type: networq:organization:group
+    hook: tabs
+    label: Members

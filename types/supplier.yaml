@@ -1,0 +1,7 @@
+name: supplier
+labelPlural: Suppliers
+labelSingular: Supplier
+
+fields:
+  notes:
+    type: string

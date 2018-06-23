@@ -1,0 +1,9 @@
+name: organization
+labelPlural: Organizations
+labelSingular: Organization
+
+parent: parentOrganization # breadcrumbs
+
+fields:
+  parentOrganization:
+    type: networq:organization:organization

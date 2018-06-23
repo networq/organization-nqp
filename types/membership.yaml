@@ -1,0 +1,12 @@
+name: membership
+icon: flask
+listed: false
+
+fields:
+  group:
+    type: networq:organization:group
+  member:
+    type: networq:organization:member
+  focus:
+    type: string
+    

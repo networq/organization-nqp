@@ -1,0 +1,9 @@
+<ul class="list-group">
+  {% for ms in node['networq:organization:member']['memberships'] %}
+
+    <li class="list-group-item">
+        <h3>{{ ms['networq:organization:membership']['group']['networq:core:node']['name'] }}</h3>
+        {{ ms['networq:organization:membership']['group']|nodeButton|raw }}<br />
+    </li>
+  {% endfor %}
+</ul>

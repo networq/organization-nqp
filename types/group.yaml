@@ -1,0 +1,13 @@
+name: group
+labelPlural: Groups
+labelSingular: Group
+
+parent: parentGroup # breadcrumbs
+
+fields:
+  memberships:
+    type: networq:organization:membership[]
+    reverse: group
+
+  parentGroup:
+    type: networq:organization:group
