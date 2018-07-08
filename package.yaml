@@ -11,3 +11,7 @@ widgets:
     type: networq:organization:group
     hook: tabs
     label: Members
+  groupProperties:
+    type: networq:organization:group
+    hook: properties
+    label: Group properties

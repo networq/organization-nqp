@@ -2,9 +2,11 @@
   {% for ms in node['networq:organization:group']['memberships'] %}
 
     <li class="list-group-item">
+        <img style="float: left; width: 100px; margin-right: 10px;" src="{{ms['networq:organization:membership']['member']['networq:core:node']['image']}}" />
         <h3>
           {{ ms['networq:organization:membership']['member']['networq:core:node']['name']}}
         </h3>
+        {{ ms|nodeButton|raw }}<br />
         {{ ms['networq:organization:membership']['member']|nodeButton|raw }}<br />
     </li>
   {% endfor %}

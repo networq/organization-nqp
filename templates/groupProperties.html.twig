@@ -1,0 +1,22 @@
+<ul>
+    {% if node['networq:organization:group']['parentGroup'] %}
+    <li>
+        <i class="fa fa-sitemap"></i> Super group:<br />
+        <a href="{{ node['networq:organization:group']['parentGroup']|nodePath }}">
+            {{ node['networq:organization:group']['parentGroup']['networq:core:node']['name'] }}
+        </a>
+    </li>
+    {% endif %}
+
+    {% if node['networq:organization:group']['subGroups']|length >0 %}
+    <li>
+        <i class="fa fa-sitemap"></i> Sub-groups:<br />
+        {% for node in node['networq:organization:group']['subGroups'] %}
+        - <a href="{{ node|nodePath }}">
+            {{ node['networq:core:node']['name'] }}
+        </a><br />
+        {% endfor %}
+    </li>
+    {% endif %}
+
+</ul>

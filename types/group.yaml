@@ -11,3 +11,7 @@ fields:
 
   parentGroup:
     type: networq:organization:group
+
+  subGroups:
+    type: networq:organization:group[]
+    reverse: parentGroup

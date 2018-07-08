@@ -3,6 +3,7 @@
 
     <li class="list-group-item">
         <h3>{{ ms['networq:organization:membership']['group']['networq:core:node']['name'] }}</h3>
+        {{ ms|nodeButton|raw }}<br />
         {{ ms['networq:organization:membership']['group']|nodeButton|raw }}<br />
     </li>
   {% endfor %}
